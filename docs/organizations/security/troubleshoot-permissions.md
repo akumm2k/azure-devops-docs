@@ -8,7 +8,7 @@ ms.topic: troubleshooting
 ms.author: chcomley
 author: chcomley
 monikerRange: '<= azure-devops'
-ms.date: 04/20/2026
+ms.date: 10/26/2026
 ms.custom: sfi-image-nochange, copilot-scenario-highlight
 --- 
 
@@ -141,6 +141,16 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 ::: moniker-end
 
 For more information, see [Manage access to specific features and functions](restrict-access.md) or [Request an increase in permission levels](request-changes-permissions.md).
+
+::: moniker range="azure-devops"
+
+## Permission change propagation
+
+In Azure DevOps Services, changes to directly assigned permissions, including revocations, might not take effect immediately for all requests. During a brief propagation interval, requests can still be authorized using the previous permissions.
+
+A successful permission-update response confirms that the change was saved. It doesn't guarantee that every subsequent request immediately reflects the updated permissions.
+
+::: moniker-end
 
 <a id="refresh-permissions"></a>
 
