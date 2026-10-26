@@ -146,7 +146,7 @@ For more information, see [Manage access to specific features and functions](res
 
 ## Permission change propagation
 
-In Azure DevOps Services, changes to directly assigned permissions, including revocations, might not take effect immediately for all requests. During a brief propagation interval, requests can still be authorized using the previous permissions.
+In Azure DevOps Services, changes to directly assigned permissions, including revocations, might not take effect immediately for all requests. A propagation delay of approximately 1-2 seconds can occur, but this interval isn't a guaranteed maximum. During propagation, requests can still be authorized using the previous permissions.
 
 A successful permission-update response confirms that the change was saved. It doesn't guarantee that every subsequent request immediately reflects the updated permissions.
 
